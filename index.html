@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            font-family: "Apple LiGothic";
+        }
+
+        .card {
+            background-color: white;
+            padding: 50px;
+            text-align: center;
+            color: dimgray;
+        }
+
+        .block {
+            display: block;
+            width: 100%;
+            border: None;
+            color: white;
+            background: tomato;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .label {
+            background: tomato;
+            color: white;
+            border-radius: 10px;
+            width: 35%;
+            padding: 5px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Onboard</title>
+</head>
+<body style="background: cornflowerblue">
+<h1 style="color: white; text-align: center">Help Annotate Cancer Research</h1>
+<div class="card">
+    <h2>The Goal</h2>
+    <p>You'll be shown a series of summarized article texts, like the one below.</p>
+    <div style="border: tomato 2px solid; width: 65%; margin: auto">
+        <p>The drug was effective at treating the cancer, and is recommended for further study.</p>
+        <div class="label">
+            <p><b>Label:</b> effective</p>
+        </div>
+    </div>
+    <p>Each text has a true label of <b>effective</b> or <b>noneffective</b> and your task is to give your best  guess as to which it is.</p>
+
+    <h2>What contributes to the label?</h2>
+    <p>Here is some of the language of the <b>effective</b> class:</p>
+    <li>Inhibiting the cancer</li>
+    <li>Contributing to a positive outcome</li>
+    <li>Causing a decrease in negative outcomes</li>
+    <li>Being active against the cancer</li>
+    <p>Here is some of the language of the <b>noneffective</b> class:</p>
+    <li>Had no effect on the cancer or outcomes</li>
+    <li>Caused or contributed to negative outcomes</li>
+    <li>Results were positive only for some tumors, and not others</li>
+
+    <h2>Some Examples</h2>
+    <div style="border: tomato 2px solid; width: 65%; margin: auto; margin-bottom: 10px">
+        <p>The treatment should not be chosen as standard treatment in patients with the cancer. However, the treatment represents a useful alternative in patients who prefer oral treatment or when socioeconomic considerations are an important issue.</p>
+        <div class="label">
+            <p><b>Label:</b> noneffective</p>
+        </div>
+    </div>
+    <div style="border: tomato 2px solid;width: 65%; margin: auto; margin-bottom: 10px">
+        <p>Thus, near life-long treatment with the drug in rats resulted in dose and time dependent formation of the cancer.</p>
+        <div class="label">
+            <p><b>Label:</b> noneffective</p>
+        </div>
+    </div>
+    <div style="border: tomato 2px solid; width: 65%; margin: auto; margin-bottom: 10px">
+        <p>The results suggested that the drug might be a promising target for clinical therapy for the cancer.</p>
+        <div class="label">
+            <p><b>Label:</b> effective</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
